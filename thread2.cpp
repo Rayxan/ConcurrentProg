@@ -10,14 +10,12 @@ using namespace std;
 int contador = 0;
 
 void * pthread_func(void * arg){
-    
     for(int i=0;i<5;i++)
         contador++;
     
     int id = *((int *) arg);
     printf("Criou um pthread com id = %d \n", id);
     pthread_exit(0);
-
 }
 
 int main(){
