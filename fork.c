@@ -1,9 +1,8 @@
 //Aula: Disciplina de Programação Concorrente 2020/1- Processos
-#include<bits/stdc++.h>
+#include<stdio.h>
 #include<unistd.h>
 // #include<errno.h>
 #include<sys/wait.h>
-using namespace std;
 
 int main(){
     int i = 0;
@@ -19,7 +18,7 @@ int main(){
             waitpid(pid,NULL,0);
         }
     }
-    cout<<"Valor: "<<valor<<endl;
+    printf("Valor: %d\n",valor);
 
     return 0;
 }
