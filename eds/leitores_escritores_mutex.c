@@ -113,6 +113,7 @@ void write_data_base(int i) {
 /*
 Resposta: 
 Todos os leitores chegam até a função read_data_base(i), onde tem acesso aos dados;
+Assim o turno dos leitores é liberado;
 Enquanto isso um dos escritores pega o turno, e para no lock_bd;
 Conforme os leitores vão saindo, o escritor fica esperando no seu lock_bd e quando os
 leitores dão unlock_bd, o escritor consegue ter acesso ao lock_bd e consegue escrever. 
